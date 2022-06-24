@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+
+    <style>
+main {
+    background-color: darkblue;
+    height: 100px;
+    
+
+
+
+
+    display: flex;
+
+  /*  flex-direction: row;  /* standart olarak özellik satırda sıralar*/
+  /*  flex-direction: column; /* sütünda sıralar */
+  /*  flex-direction: row-reverse; /* satırda ters sıralar*/
+  /*  flex-direction: column-reverse; /* sutunda ters sıralar */
+
+  /*  flex-wrap: wrap; /* sayf genişliği azaldığında elemenları alta geçirir.   responsive tasarım gibi*/
+  /*  flex-wrap: wrap-reverse; /* sayfa genişliği azadığında elemanları tersten alta geçirir.*/
+
+  /*  flex-wrap: nowrap; /* sayfa geniliği azaldığında elemanları yerine mudahale etmez altta scroll bar çıkar */
+    
+
+
+
+  justify-content: start;  /* standart özellik satırda soldan başlatır */
+  justify-content: center; /* satırı ortalar */
+  justify-content: end; /* satırın sonuna alır */
+ 
+
+  justify-content: space-around;  /* satırda elemanlar arasındaki boşluk 2x sağ sol kenar ile olan boşluk x kadar bırakılır*/
+  justify-content: space-between; /* satırda elemanlar arasındaki mesafeyi eşit böler. sağ kenar sol kenardan boşluk bırakmaz*/
+  justify-content: space-evenly; /* satırda tüm boşuklar eşit bölünür*/
+
+  
+  align-items: stretch; /* standart özellik bulunduğu sütunun tamamını alır*/
+  align-items: center; /* içerik kadar yer kaplar ve sütunun ortasında pozisyon alır*/
+  align-items: flex-start; /* içerik kadar yer kaplar ve en yukarıda konumlanır*/
+  align-items: flex-end; /* içerik kadar yer alır aşağıda konumlanır*/
+ 
+   /*NOT: yukarıda ki özellikler flex-direction:row ise geçerli.*/
+
+   /*Not: 
+   
+   flex-direction==row {
+
+    align-items : dikey konumu düzenler.
+    justify-content: yatay onumu düzenler.
+   }
+
+   flex-direction==collum {
+    align-items : yatay konumu düzenler.
+    justify-content: dikey konumu düzenler.
+   }
+   
+   */
+
+  
+    
+
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+div {
+    background-color: rgb(217, 118, 134);
+  
+   
+    text-align: center;
+    padding: 15px;
+    box-sizing: border-box;
+    color: white;
+    font-size: 25px;
+   
+}
+
+
+
+    </style>
+</head>
+<body>
+    
+
+<main>
+
+<div>Item1</div>
+<div>Item2</div>
+<div>Item3</div>
+<div>Item4</div>
+<div>Item5</div>
+<div>Item6</div>
+
+</main>
+
+
+
+</body>
+</html>
