@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>İtems özellikleri</title>
+
+    <style>
+      body {
+        padding: 10px;
+      }
+
+
+
+
+      /* item özelinde dikeyde konum ayarlama*/
+      .div1 {
+        margin-bottom: 120px;
+        background-color: grey;
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+      }
+      .div1 > div {
+        background-color: green;
+        padding: 10px;
+        margin: 10px;
+      }
+      .div1 > .item1 {
+        align-self: flex-end;
+      }
+      .div1 > .item2 {
+        align-self: center;
+      }
+
+
+
+
+     /* item özelinde yatayda konum ayarlama*/
+      .div2 {
+        margin-bottom: 120px;
+        background-color: grey;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+      }
+      .div2 > div {
+        background-color: purple;
+        padding: 10px;
+        margin: 10px;
+      }
+      .div2 > .item1 {
+        align-self: flex-end;
+      }
+      .div2 > .item2 {
+        align-self: center;
+      }
+    
+
+
+
+
+    /*item özelinde grow ile boyut ayarlama */
+      .div3 {
+        margin-bottom: 120px;
+        background-color: grey;
+        height: 200px;
+        display: flex;
+      }
+      .div3 > div {
+        background-color:darkblue;
+        padding: 10px;
+        margin: 10px;
+        color: white;
+      }
+      .div3 > .item1 {
+        flex-grow: 2;  /* kalan boşluun 2x i item1 alması için bu kod kullanılıar */
+      }
+      .div3 > .item2 {
+       flex-grow: 1;  /* kalan boşluun x i item2 alması için bu kod kullanılıar */
+      }
+
+
+
+      .div4 {
+        margin-bottom: 120px;
+        background-color: grey;
+        height: 200px;
+        display: flex;
+      }
+      .div4 > div {
+        background-color:darkred;
+        padding: 10px;
+        margin: 10px;
+        color: white;
+      }
+      .div4 > .item1 {
+        flex-basis: 200px;
+      }
+      .div4 > .item2 {
+       flex-basis: 200px; /* flex-basis: başlangıç genişliği ayarlanmak için kullanılır.*/
+       flex-shrink: 0;  /* flez-shrink: verilen değeri sabitlemek için kullanılır. varsayılan değeri "1".  "0" verilince sayfa kuçulse bile genişliğini korur.*/  
+      }
+    /***NOT: flex: 1 0 200px;  anlamı: flext: grow  shrink  basis;  item a tek satırda hepsi için değer verebiliriz.***/
+
+
+
+    .div5 {
+        margin-bottom: 120px;
+        background-color: grey;
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+      }
+      .div5 > div {
+        background-color: darkorange;
+        padding: 10px;
+        margin: 10px;
+        margin-bottom: 10px;
+      }
+      .div5 > .item1 {
+        order: 1;  /* sıralama yapmaya yarar, sayı ne kadar küçük is o kadar önde olur.*/
+      }
+      .div5 > .item2 {
+        order: -1;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h3>  flex-direction: row;</h3>
+    <h3>item1:  align-self: flex-end;</h3>
+    <h3> item2: align-self: center;</h3>
+
+    <div class="div1">
+      <div class="item1">Item1</div>
+      <div class="item2">Item2</div>
+      <div class="item3">Item3</div>
+    </div>
+
+
+
+    <h3>  flex-direction: collum;</h3>
+    <h3>item1:  align-self: flex-end;</h3>
+    <h3> item2:  align-self: center;</h3>
+    <div class="div2">
+        <div class="item1">Item1</div>
+        <div class="item2">Item2</div>
+        <div class="item3">Item3</div>
+      </div>
+
+
+      <h3>  flex-direction: row;</h3>
+      <h3>item1:   flex-grow: 2;</h3>
+      <h3> item2:   flex-grow: 1;</h3>
+    <div class="div3">
+      <div class="item1">Item1</div>
+      <div class="item2">Item2</div>
+      <div class="item3">Item3</div>
+    </div>
+
+
+    <h3>  flex-direction: row;</h3>
+      <h3>item1:     order: 1;</h3>
+      <h3> item2:      order: -1; </h3>
+    <div class="div5">
+      <div class="item1">Item1</div>
+      <div class="item2">Item2</div>
+      <div class="item3">Item3</div>
+    </div>
+
+
+
+  </body>
+</html>

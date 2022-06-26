@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>İtems özellikleri</title>
+
+    <style>
+
+    /* 
+    
+
+    align-content:
+
+    flex-start: elemanları dikeyde en üstte konumlandırır.
+    flex-end: elemanları dikeyde en altta konumlandırır.
+    center: elemanları dikeyde ortalar.
+    strectich: elemanları hizalamaz, yüksekliğini uzatır.
+    space-between: elemanlar arası boşluk en fazla olur. kenarlar arası boşluk olma(yukarı-aşağı)
+    space-around: elemanlar arası boşluk boşluk x kenar arası boşluk 2x yapat.
+    space-evenly elemanlar arası ve kenar boşlığı eşit.
+
+    gap: elemanlar arası boşluğu ayaralamaya yarar. gap:20px yataydan ve dikeyden 20px boşluk demek.
+    row-gap: yatayda elemanlar arası boşluk iin kullanılıyor.
+    collum-gap: dikeyde boşluk için kullanılıyor.
+
+
+
+    */
+
+
+
+      body {
+        padding: 10px;
+      }
+
+
+
+
+     
+      .div1 {
+        margin-bottom: 120px;
+        background-color: grey;
+        height: 500px;
+        width: 500px;
+        display: flex;
+        align-content: flex-start;
+        flex-wrap: wrap;
+      }
+      .div1 > div {
+        background-color: green;
+        padding: 10px;
+        margin: 10px;
+        width: 50px;
+        height: 50px;
+      }
+    
+
+
+
+      .div2 {
+        margin-bottom: 120px;
+        background-color: grey;
+        height: 500px;
+        width: 500px;
+        display: flex;
+        align-content: center;
+        flex-wrap: wrap;
+      }
+      .div2 > div {
+        background-color: darkblue;
+        padding: 10px;
+        margin: 10px;
+        width: 50px;
+        height: 50px;
+      }
+
+
+      
+      .div3 {
+        margin-bottom: 120px;
+        background-color: grey;
+        height: 500px;
+        width: 500px;
+        display: flex;
+        align-content: flex-end;
+        flex-wrap: wrap;
+      }
+      .div3 > div {
+        background-color: darkmagenta;
+        padding: 10px;
+        margin: 10px;
+        width: 50px;
+        height: 50px;
+      }
+
+
+      .div4 {
+        margin-bottom: 120px;
+        background-color: grey;
+        height: 500px;
+        width: 500px;
+        display: flex;
+        align-content: space-between;
+        flex-wrap: wrap;
+      }
+      .div4 > div {
+        background-color: darkorange;
+        padding: 10px;
+        margin: 10px;
+        width: 50px;
+        height: 50px;
+      }
+
+      .div5 {
+        margin-bottom: 120px;
+        background-color: grey;
+        height: 500px;
+        width: 500px;
+        display: flex;
+        align-content: space-around;
+        flex-wrap: wrap;
+      }
+      .div5 > div {
+        background-color: darkred;
+        padding: 10px;
+        margin: 10px;
+        width: 50px;
+        height: 50px;
+      }
+
+
+
+      .div6 {
+        margin-bottom: 120px;
+        background-color: grey;
+        height: 500px; 
+        width: 500px;
+        display: flex;
+        align-content:space-evenly;
+        flex-wrap: wrap;
+      }
+      .div6 > div {
+        background-color: yellow;
+        padding: 10px;
+        margin: 10px;
+        width: 50px;
+        height: 50px;
+      }
+
+
+
+      .div7 {
+        margin-bottom: 120px;
+        background-color: grey;
+        height: 500px; 
+        width: 500px;
+        display: flex;
+        gap: 20px;   /* sadece elemanlar arası boşluk bırakıyor.*/s
+        flex-wrap: wrap;
+      }
+      .div7 > div {
+        background-color: palevioletred;
+        width: 50px;
+       
+        height: 50px;
+      }
+
+
+
+
+    </style>
+  </head>
+  <body>
+   
+
+
+
+
+    <h3> align-content:flex-start</h3>
+    <div class="div1">
+      <div class="item1">Item1</div>
+      <div class="item2">Item2</div>
+      <div class="item3">Item3</div>
+      <div class="item1">Item4</div>
+      <div class="item2">Item5</div>
+      <div class="item3">Item6</div>
+      <div class="item1">Item7</div>
+      <div class="item2">Item8</div>
+      <div class="item3">Item9</div>
+    </div>
+
+    
+    <h3> align-content:center</h3>
+    <div class="div2">
+      <div class="item1">Item1</div>
+      <div class="item2">Item2</div>
+      <div class="item3">Item3</div>
+      <div class="item1">Item4</div>
+      <div class="item2">Item5</div>
+      <div class="item3">Item6</div>
+      <div class="item1">Item7</div>
+      <div class="item2">Item8</div>
+      <div class="item3">Item9</div>
+    </div>
+
+
+    <h3> align-content:flex-end</h3>
+    <div class="div3">
+      <div class="item1">Item1</div>
+      <div class="item2">Item2</div>
+      <div class="item3">Item3</div>
+      <div class="item1">Item4</div>
+      <div class="item2">Item5</div>
+      <div class="item3">Item6</div>
+      <div class="item1">Item7</div>
+      <div class="item2">Item8</div>
+      <div class="item3">Item9</div>
+    </div>
+
+
+    <h3> align-content:space-between</h3>
+    <div class="div4">
+      <div class="item1">Item1</div>
+      <div class="item2">Item2</div>
+      <div class="item3">Item3</div>
+      <div class="item1">Item4</div>
+      <div class="item2">Item5</div>
+      <div class="item3">Item6</div>
+      <div class="item1">Item7</div>
+      <div class="item2">Item8</div>
+      <div class="item3">Item9</div>
+    </div>
+
+    <h3> align-content:space-around</h3>
+    <div class="div5">
+      <div class="item1">Item1</div>
+      <div class="item2">Item2</div>
+      <div class="item3">Item3</div>
+      <div class="item1">Item4</div>
+      <div class="item2">Item5</div>
+      <div class="item3">Item6</div>
+      <div class="item1">Item7</div>
+      <div class="item2">Item8</div>
+      <div class="item3">Item9</div>
+    </div>
+
+
+    <h3> align-content:space-evenly</h3>
+    <div class="div6">
+      <div class="item1">Item1</div>
+      <div class="item2">Item2</div>
+      <div class="item3">Item3</div>
+      <div class="item1">Item4</div>
+      <div class="item2">Item5</div>
+      <div class="item3">Item6</div>
+      <div class="item1">Item7</div>
+      <div class="item2">Item8</div>
+      <div class="item3">Item9</div>
+    </div>
+
+
+    <h3> margin vermeden gap ile boşluk bırakma</h3>
+    <div class="div7">
+      <div class="item1">Item1</div>
+      <div class="item2">Item2</div>
+      <div class="item3">Item3</div>
+      <div class="item1">Item4</div>
+      <div class="item2">Item5</div>
+      <div class="item3">Item6</div>
+      <div class="item1">Item7</div>
+      <div class="item2">Item8</div>
+      <div class="item3">Item9</div>
+    </div>
+
+
+
+
+   
+
+
+  </body>
+</html>

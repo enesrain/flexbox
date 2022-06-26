@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+.div1 {
+    background-color: gray;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.div1 h3 {
+    align-self: flex-start;
+}
+
+
+        .bir {
+    background-color: rgb(217, 118, 134);
+    text-align: center;
+    padding: 15px;
+    box-sizing: border-box;
+    color: white;
+    font-size: 25px;
+}
+
+
+
+.div2 {
+    background-color: gray;
+    height: 500px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+.div2 h3 {
+    align-self: flex-start;
+}
+.iki {
+    background-color: darkblue;
+  
+    width: 100px;
+    text-align: center;
+    padding: 15px;
+    box-sizing: border-box;
+    color: white;
+    font-size: 25px;
+   
+}
+
+    </style>
+</head>
+<body>
+    <main>
+   <div class="div1">
+
+   <h3>flex-direction:row olduğu için, justify-content: satır için işlem yapıyor, align-items: sutun için işlem yapıyor.</h3>
+
+        <div class="bir">Item1</div>
+        <div class="bir">Item2</div>
+        <div class="bir">Item3</div>
+        <div class="bir">Item4</div>
+        <div class="bir">Item5</div>
+        <div class="bir">Item6</div>
+
+    </div>
+
+    <div class="div2">
+
+        <h3>flex-direction:collum olduğu için, justify-content: sutun için işlem yapıyor, align-items: satır için işlem yapıyor.</h3>
+        <div class="iki">Item1</div>
+        <div class="iki">Item2</div>
+        <div class="iki">Item3</div>
+        <div class="iki">Item4</div>
+        <div class="iki">Item5</div>
+        <div class="iki">Item6</div>
+
+    </div>
+        
+        </main>
+        
+</body>
+</html>
