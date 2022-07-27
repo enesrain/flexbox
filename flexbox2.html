@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/5a44f94317.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>flexboxornek2</title>
+
+    <style>
+
+  body  {
+    display: flex;
+    flex-direction: column;
+  }
+  header {
+     height: 100px;
+     background-color: darkcyan;
+     display: flex;
+     align-items: center;
+  }
+  header  div {
+    height: 60px;
+    background-color: gray;
+    flex-grow: 1;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  main {
+    height: 500px;
+    background-color: darkmagenta;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+  }
+ .left {
+    flex-grow: 1;
+    background-color: rgb(169, 166, 166);
+    height: 100%;
+    text-align: center;
+    font-size: 30px;
+ }
+ .right {
+    flex-grow: 4;
+    background-color: rgb(84, 83, 83);
+    height: 100%;
+    text-align: center;
+    font-size: 30px;
+ }
+
+ .position {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    background-color: darkolivegreen;
+    margin-top: 50px;
+ }
+ .position div {
+    width: 150px;
+    height: 120px;
+    background-color: gray;
+    text-align: center;
+    align-self: center;
+    
+ }
+
+ footer {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+ }
+ .top {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 30px;
+    background-color: rgb(169, 166, 166);
+ }
+ .bottom {
+    flex-grow: 4;
+    text-align: center;
+    font-size: 30px;
+    background-color: rgb(84, 83, 83);
+ }
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="div1">1</div>
+      <div class="div2">2</div>
+      <div class="div3">3</div>
+    </header>
+
+    <div class="position">
+        <div>position</div>
+        </div>
+
+    <main>
+      <div class="left">sol</div>
+      <div class="right">sağ</div>
+    </main>
+
+   
+
+    <footer>
+      <div class="top">Üst</div>
+      <div class="bottom">alt</div>
+    </footer>
+  </body>
+</html>
